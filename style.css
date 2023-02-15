@@ -28,7 +28,8 @@ body .col-6-sm {
 }
 
 #wrapper {
-
+  width: 750px;
+  height: 1334px;
   margin: 40px auto;
   background: var(--color-dark);
   border-radius: 45px;
