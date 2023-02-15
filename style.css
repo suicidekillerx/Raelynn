@@ -37,13 +37,33 @@ body .col-6-sm {
   overflow-x: hidden;
   box-shadow: 0 18px 12px -12px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 540px) {
+/* For devices with a screen width of up to 600px */
+@media (max-width: 600px) {
   #wrapper {
-    margin: 0px;
     width: 100%;
+    height: auto;
+    margin: 20px auto;
     border-radius: 0;
-    padding: 0;
-    height: 100vh;
+  }
+}
+
+/* For devices with a screen width between 600px and 1200px */
+@media (min-width: 600px) and (max-width: 1200px) {
+  #wrapper {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 30px;
+  }
+}
+
+/* For devices with a screen width above 1200px */
+@media (min-width: 1200px) {
+  #wrapper {
+    width: 750px;
+    height: 1334px;
+    margin: 40px auto;
+    border-radius: 45px;
   }
 }
 #wrapper header {
